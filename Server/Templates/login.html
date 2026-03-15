@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authorize Access</title>
+</head>
+<body>
+    <h2>Sign in to continue</h2>
+
+    <form action="/login" method="post">
+        <input type="hidden" name="client_id" value="{{ client_id }}">
+
+        <div>
+            <label>Username:</label>
+            <input type="text" name="username" required>
+        </div>
+        <br>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" required>
+        </div>
+        <br>
+        <button type="submit">Log In</button>
+    </form>
+</body>
+</html>
